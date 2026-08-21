@@ -4,43 +4,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Program Bimbel Inersia</title>
-  <meta name="description" content="Pelajari Small Class, Online Private, dan Home Visit Private Inersia.">
-  <meta property="og:title" content="Program Bimbel Inersia">
-  <meta property="og:description" content="Pelajari Small Class, Online Private, dan Home Visit Private Inersia.">
+  <script>document.documentElement.classList.add("js")</script>
+  <title>Program Bimbel Inersia | Small Class & Private</title>
+  <meta name="description" content="Pelajari PTN Small Class, Online Private, dan Home Visit Private Inersia untuk kebutuhan belajar siswa yang berbeda.">
+  <link rel="canonical" href="https://www.inersia.id/program.html">
+  <meta property="og:title" content="Program Bimbel Inersia | Small Class & Private">
+  <meta property="og:description" content="Pelajari PTN Small Class, Online Private, dan Home Visit Private Inersia untuk kebutuhan belajar siswa yang berbeda.">
+  <meta property="og:image" content="https://www.inersia.id/assets/img/home-hero.webp">
+  <meta property="og:url" content="https://www.inersia.id/program.html">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bimbel Inersia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Program Bimbel Inersia | Small Class & Private">
+  <meta name="twitter:description" content="Pelajari PTN Small Class, Online Private, dan Home Visit Private Inersia untuk kebutuhan belajar siswa yang berbeda.">
+  <meta name="twitter:image" content="https://www.inersia.id/assets/img/home-hero.webp">
+  
+  
+  
+  
+  
   <link rel="icon" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body data-page="programs">
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
   <div class="announcement">Program persiapan PTN 2027 tersedia di Malang, Surabaya, dan Bandung.</div>
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" alt="Logo Inersia"><span><strong>Bimbel
+      <a class="brand" href="index.html"><img src="assets/img/logo-mark.svg" alt="Logo Inersia" width="64" height="64" decoding="async"><span><strong>Bimbel
             Inersia</strong><small>Belajar personal, progres terlihat</small></span></a>
-      <button class="nav-toggle" aria-label="Buka menu"
+      <button class="nav-toggle" aria-controls="site-navigation" aria-label="Buka menu"
         aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="site-nav"><a href="index.html" data-nav="home">Beranda</a><a href="tentang.html"
+      <nav class="site-nav" id="site-navigation" aria-label="Navigasi utama"><a href="index.html" data-nav="home">Beranda</a><a href="tentang.html"
           data-nav="about">Tentang</a><a href="program.html" data-nav="programs">Program</a><a href="metode.html"
           data-nav="method">Metode</a><a href="tutor.html" data-nav="tutors">Tutor</a><a href="kota.html"
           data-nav="cities">Kota</a><a href="artikel.html" data-nav="articles">Artikel</a><a href="faq.html"
-          data-nav="faq">FAQ</a><a class="btn btn-primary" href="kontak.html">Konsultasi</a></nav>
+          data-nav="faq">FAQ</a><a data-track="CTA_Click" class="btn btn-primary" href="kontak.html">Konsultasi</a></nav>
     </div>
   </header>
-  <main>
+  <main id="main-content">
     <section class="page-hero">
       <div class="container"><span class="eyebrow">PROGRAM INERSIA</span>
         <h1>Tiga format belajar untuk kebutuhan yang berbeda.</h1>
         <p>Pilih berdasarkan tingkat personalisasi, lokasi, fleksibilitas, dan dukungan yang dibutuhkan siswa. Tidak
-          semua siswa harus masuk program yang sama, suatu konsep yang mengejutkan bagi industri yang gemar membuat satu
-          paket untuk semua.</p>
+          semua siswa harus masuk program yang sama.</p>
       </div>
     </section>
     <section class="section">
       <div class="container">
         <div class="cards-3">
-          <article class="program-card featured"><span class="program-label">Program Offline Utama</span>
+          <article class="program-card featured" id="small-class"><span class="program-label">Program Offline Utama</span>
             <h3>Inersia PTN Small Class 2027</h3>
             <p>Program persiapan jalur nasional dengan kelas maksimal lima siswa, tutor lulusan ITB terseleksi, latihan
               personal, pemantauan mingguan, dan laporan orang tua.</p>
@@ -50,7 +64,7 @@
               <li>Sulit berkembang di kelas besar.</li>
               <li>Membutuhkan disiplin dan pemantauan.</li>
               <li>Menargetkan PTN melalui jalur nasional.</li>
-            </ul><a class="btn btn-primary" data-lp-link href="small-class-program.html">Lihat Detail Small Class</a>
+            </ul><a data-track="CTA_Click" class="btn btn-primary" data-lp-link href="small-class-2027/">Lihat Detail Small Class</a>
           </article>
           <article class="program-card"><span class="program-label">Private Online</span>
             <h3>Online Private</h3>
@@ -62,7 +76,7 @@
               <li>Memiliki jadwal yang membutuhkan fleksibilitas.</li>
               <li>Nyaman belajar secara online.</li>
               <li>Membutuhkan fokus materi tertentu.</li>
-            </ul><a class="btn btn-outline" href="kontak.html">Cek Ketersediaan Tutor</a>
+            </ul><a data-track="CTA_Click" class="btn btn-outline" href="kontak.html">Cek Ketersediaan Tutor</a>
           </article>
           <article class="program-card"><span class="program-label">Private Offline</span>
             <h3>Home Visit Private</h3>
@@ -73,7 +87,7 @@
               <li>Memerlukan koordinasi dengan orang tua.</li>
               <li>Memiliki lokasi yang terjangkau tutor.</li>
               <li>Membutuhkan program yang sangat personal.</li>
-            </ul><a class="btn btn-outline" href="kontak.html">Konsultasi Area Layanan</a>
+            </ul><a data-track="CTA_Click" class="btn btn-outline" href="kontak.html">Konsultasi Area Layanan</a>
           </article>
         </div>
       </div>
@@ -81,7 +95,7 @@
     <section class="section bg-soft">
       <div class="container">
         <div class="section-title"><span class="eyebrow">PERBANDINGAN</span>
-          <h2>Bandingkan format berdasarkan kebutuhan, bukan gengsi paket.</h2>
+          <h2>Bandingkan format berdasarkan kebutuhan siswa.</h2>
         </div>
         <div class="table-scroll">
           <table class="comparison">
@@ -120,7 +134,7 @@
               </tr>
               <tr>
                 <td>Ketersediaan</td>
-                <td>Maks. 20 siswa/kota</td>
+                <td>Konfirmasi melalui tim Inersia</td>
                 <td>Bergantung tutor</td>
                 <td>Sangat terbatas</td>
               </tr>
@@ -135,7 +149,7 @@
           <div><span class="eyebrow yellow">BUTUH ARAHAN?</span>
             <h2>Pilih program setelah kebutuhan siswa dipahami.</h2>
             <p>Konsultasikan target, kota, kelas, dan kesulitan utama siswa kepada tim Inersia.</p>
-          </div><a class="btn btn-primary" href="kontak.html">Konsultasi Program</a>
+          </div><a data-track="CTA_Click" class="btn btn-primary" href="kontak.html">Konsultasi Program</a>
         </div>
       </div>
     </section>
@@ -143,7 +157,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <div class="brand"><img src="assets/img/logo-mark.svg" alt="Logo Inersia"><span><strong>Bimbel
+        <div class="brand"><img src="assets/img/logo-mark.svg" alt="Logo Inersia" width="64" height="64" loading="lazy" decoding="async"><span><strong>Bimbel
               Inersia</strong><small>Persiapan masuk PTN yang lebih personal dan terukur.</small></span></div>
         <p>Inersia membantu siswa mempersiapkan jalur nasional melalui pembelajaran terarah, latihan personal, dan
           pemantauan perkembangan.</p>
@@ -163,15 +177,15 @@
           <li><a href="kota.html">Lokasi Program</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="kontak.html">Kontak</a></li>
-          <li><a data-lp-link href="small-class-program.html">LP Small Class</a></li>
+          <li><a data-lp-link href="small-class-2027/">PTN Small Class 2027</a></li>
         </ul>
       </div>
       <div>
         <h4>Kontak</h4>
         <ul>
-          <li><a data-email href="#">halo@inersia.id</a></li>
-          <li><span data-hours>Senin–Sabtu, 09.00–18.00 WIB</span></li>
-          <li>Malang • Surabaya • Bandung</li>
+          <li><a data-email href="mailto:inersiaeducation@gmail.com">inersiaeducation@gmail.com</a></li>
+          <li><span data-hours>Layanan informasi tersedia 24 jam.</span></li><li><a data-instagram="handle" href="https://instagram.com/inersiaeducation" target="_blank" rel="noopener">@inersiaeducation</a></li>
+          <li><a href="kota.html">Malang • Surabaya • Bandung</a></li>
         </ul>
       </div>
     </div>
@@ -179,7 +193,7 @@
           href="kebijakan-privasi.html">Kebijakan Privasi</a> · <a href="syarat-ketentuan.html">Syarat &
           Ketentuan</a></span></div>
   </footer>
-  <div class="mobile-cta"><a class="btn btn-primary" href="kontak.html">Konsultasi Program</a></div>
+  <div class="mobile-cta"><a data-track="CTA_Click" class="btn btn-primary" href="kontak.html">Cek Program yang Sesuai</a></div>
   <script src="assets/js/site-config.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

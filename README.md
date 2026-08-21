@@ -1,40 +1,26 @@
-# Website Statis Bimbel Inersia
+# Website Utama Bimbel Inersia
 
-## Struktur
-- `index.html`: beranda utama
-- `tentang.html`: profil dan prinsip Inersia
-- `program.html`: ringkasan program
-- `metode.html`: sistem pembelajaran
-- `tutor.html`: seleksi dan profil tutor
-- `kota.html`: Malang, Surabaya, Bandung
-- `artikel.html`: indeks artikel
-- `faq.html`: FAQ
-- `kontak.html`: form WhatsApp
-- halaman artikel dan legal
+Website statis resmi Inersia. Landing page PTN Small Class 2027 berada di dalam website ini pada folder `small-class-2027/`.
 
-## Konfigurasi wajib
-Buka `assets/js/site-config.js`, lalu ganti:
-- nomor WhatsApp
-- email
-- URL landing page Small Class pada subdomain Anda
-- Instagram
-- jam operasional
+## Konfigurasi
 
-## Placeholder yang harus diganti
-- nama, foto, program studi, dan pengalaman tutor
-- alamat lokasi dan Google Maps
-- jadwal dan status kuota
-- legalitas usaha
-- kebijakan program final
+Informasi resmi tersimpan di `assets/js/site-config.js`. WhatsApp, email, Instagram, jam layanan, domain utama, dan tiga alamat sudah diperbarui.
 
-## Menjalankan
-Buka `index.html` langsung atau unggah seluruh folder ke hosting statis. Untuk pengujian lokal yang lebih baik:
+Sebelum deployment, isi hanya data yang belum final:
+
+- `mapsUrl` untuk setiap lokasi setelah URL Google Maps resmi tersedia.
+- ID GA4, Meta Pixel, dan verifikasi Search Console bila sudah tersedia.
+
+## Menjalankan secara lokal
+
+Jalankan server statis dari folder ini:
 
 ```bash
 python -m http.server 8080
 ```
 
-Lalu buka `http://localhost:8080`.
+Lalu buka `http://localhost:8080/`.
 
 ## Deployment
-Cocok untuk cPanel, Netlify, Cloudflare Pages, GitHub Pages, atau hosting statis lain. Pastikan seluruh file dan folder `assets` diunggah dengan struktur yang sama.
+
+Seluruh path aset bersifat relatif. Proyek dapat digunakan pada shared hosting, GitHub Pages, Cloudflare Pages, Netlify, atau hosting statis lain. Publikasikan seluruh isi folder ini sebagai satu website; jangan memindahkan `small-class-2027/` ke subdomain.

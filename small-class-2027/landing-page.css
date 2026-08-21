@@ -964,3 +964,16 @@ select:focus {
     font-size: 38px;
   }
 }
+
+/* Accessibility and responsive hardening */
+body{overflow-x:hidden}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.skip-link{position:fixed;left:14px;top:14px;z-index:200;transform:translateY(-160%);padding:10px 14px;border-radius:10px;background:#fff;color:var(--navy);box-shadow:var(--shadow)}
+.skip-link:focus{transform:none}
+.form-success{margin-top:18px}
+.form-success p{margin-bottom:0}
+@media(max-width:430px){.announcement-bar{padding-inline:12px}.hero-copy h1{font-size:32px}.site-nav{max-height:calc(100vh - 110px);overflow:auto}.comparison-wrap{margin-inline:-12px;padding-inline:12px}.mobile-sticky-cta .btn{min-height:48px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(max-width:860px){html:not(.js) .header-inner{flex-wrap:wrap;padding-block:12px}html:not(.js) .site-nav{display:flex;position:static;width:100%;box-shadow:none;flex-direction:row;flex-wrap:wrap}html:not(.js) .nav-toggle{display:none}}
+html:not(.js) .faq-answer,html:not(.js) .form-step{display:block}
+html:not(.js) .next-step,html:not(.js) .prev-step{display:none}
