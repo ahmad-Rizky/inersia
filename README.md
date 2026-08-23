@@ -24,3 +24,7 @@ Lalu buka `http://localhost:8080/`.
 ## Deployment
 
 Seluruh path aset bersifat relatif. Proyek dapat digunakan pada shared hosting, GitHub Pages, Cloudflare Pages, Netlify, atau hosting statis lain. Publikasikan seluruh isi folder ini sebagai satu website; jangan memindahkan `small-class-2027/` ke subdomain.
+
+## Social proof
+
+Profil Miss Nuning dan kutipan testimoni ditampilkan pada beranda. Profil lengkap beserta dokumentasi perjalanan mengajar tersedia di `tutor.html`, sedangkan versi khusus konversi terdapat di landing page `small-class-2027/`. Seluruh foto telah dioptimalkan ke WebP dan menggunakan lazy loading pada area di bawah fold.
