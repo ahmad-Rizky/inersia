@@ -1137,4 +1137,112 @@ body{overflow-x:hidden}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 @media(max-width:860px){html:not(.js) .header-inner{flex-wrap:wrap;padding-block:12px}html:not(.js) .site-nav{display:flex;position:static;width:100%;box-shadow:none;flex-direction:row;flex-wrap:wrap}html:not(.js) .nav-toggle{display:none}}
 html:not(.js) .faq-answer,html:not(.js) .form-step{display:block}
+
+/* Small Class unified hero composition. */
+.hero.section{padding:42px 0 70px}
+.hero .hero-grid{
+  position:relative;
+  display:flex;
+  align-items:center;
+  min-height:700px;
+  overflow:hidden;
+  border-radius:var(--radius-xl);
+  isolation:isolate;
+}
+.hero .hero-copy{
+  position:relative;
+  z-index:2;
+  width:42%;
+  padding:28px 0 28px clamp(52px,7.2%,86px);
+}
+.hero .hero-copy h1{
+  max-width:410px;
+  margin-bottom:14px;
+  font-size:clamp(34px,3.05vw,44px);
+  line-height:1.08;
+}
+.hero .hero-copy .lead{
+  max-width:400px;
+  margin:0;
+  font-size:15px!important;
+  line-height:1.48;
+}
+.hero .hero-points{max-width:400px;gap:8px;margin:15px 0}
+.hero .hero-points span{padding:7px 10px;font-size:12px}
+.hero .hero-cta{max-width:400px;gap:9px;margin-top:14px}
+.hero .hero-cta .btn{min-height:45px;padding:10px 13px;font-size:13px}
+.hero .microcopy{max-width:340px;margin-top:9px;font-size:12px;line-height:1.4}
+.hero .hero-visual{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  margin:0;
+  border:0;
+  border-radius:inherit;
+  background:transparent;
+  box-shadow:none;
+  overflow:hidden;
+}
+.hero .hero-visual img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  object-position:right center;
+}
+@media(max-width:1120px){
+  .hero.section{padding:42px 0 64px}
+  .hero .hero-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    min-height:0;
+    overflow:visible;
+    border-radius:0;
+    gap:30px;
+  }
+  .hero .hero-copy{width:100%;padding:0}
+  .hero .hero-copy h1{
+    margin-bottom:18px;
+    font-size:clamp(36px,5.5vw,54px);
+    line-height:1.12;
+  }
+  .hero .hero-copy .lead{font-size:17px!important;line-height:inherit}
+  .hero .hero-copy h1,
+  .hero .hero-copy .lead,
+  .hero .hero-points,
+  .hero .hero-cta,
+  .hero .microcopy{max-width:none}
+  .hero .hero-points{gap:10px;margin:24px 0}
+  .hero .hero-points span{padding:10px 14px;font-size:14px}
+  .hero .hero-cta{gap:14px;margin-top:26px}
+  .hero .hero-cta .btn{min-height:52px;padding:14px 22px;font-size:inherit}
+  .hero .microcopy{margin-top:14px;font-size:13px;line-height:inherit}
+  .hero .hero-visual{
+    position:relative;
+    inset:auto;
+    width:100%;
+    height:auto;
+    aspect-ratio:1.55 / 1;
+    border-radius:var(--radius-xl);
+  }
+  .hero .hero-visual img{
+    position:absolute;
+    inset:0 0 0 auto;
+    width:132%;
+    height:100%;
+    object-fit:cover;
+    object-position:right center;
+  }
+}
+@media(max-width:560px){
+  .hero.section{padding:36px 0 54px}
+  .hero .hero-grid{gap:24px}
+  .hero .hero-copy h1{font-size:32px}
+  .hero .hero-visual{aspect-ratio:1.4 / 1;border-radius:20px}
+  .hero .hero-visual img{width:118%}
+}
 html:not(.js) .next-step,html:not(.js) .prev-step{display:none}
