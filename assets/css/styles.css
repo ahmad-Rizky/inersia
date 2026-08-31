@@ -39,3 +39,28 @@ body{overflow-x:hidden}
 @media(max-width:820px){html:not(.js) .header-row{flex-wrap:wrap;padding-block:12px}html:not(.js) .site-nav{display:flex;position:static;width:100%;box-shadow:none;flex-direction:row;flex-wrap:wrap}html:not(.js) .site-nav a{padding:8px}html:not(.js) .nav-toggle{display:none}}
 html:not(.js) .reveal{opacity:1;transform:none}
 html:not(.js) .faq-answer{display:block}
+
+/* Homepage hero image framing: crop the artwork's internal left whitespace. */
+.hero .hero-visual{
+  position:relative;
+  aspect-ratio:1.35 / 1;
+  min-height:0;
+  overflow:hidden;
+}
+.hero .hero-visual img{
+  position:absolute;
+  inset:0 0 0 auto;
+  width:145%;
+  max-width:none;
+  height:100%;
+  object-fit:cover;
+  object-position:right center;
+}
+@media(max-width:1050px) and (min-width:561px){
+  .hero .hero-visual{width:100%;aspect-ratio:1.55 / 1}
+  .hero .hero-visual img{width:132%;object-position:right center}
+}
+@media(max-width:560px){
+  .hero .hero-visual{width:100%;aspect-ratio:1.4 / 1}
+  .hero .hero-visual img{width:118%;object-position:right center}
+}
